@@ -71,9 +71,7 @@ func (p *Provider) UnmarshalCaddyfile(d *caddyfile.Dispenser) error {
 			}
 		}
 	}
-	if p.AccKeySecret == "" || p.AccKeyID == "" {
-		return d.Err("SecretId or SecretKey is empty")
-	}
+
 	return nil
 }
 
