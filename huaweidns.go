@@ -45,14 +45,14 @@ func (p *Provider) UnmarshalCaddyfile(d *caddyfile.Dispenser) error {
 		}
 		for nesting := d.Nesting(); d.NextBlock(nesting); {
 			switch d.Val() {
-			case "secret_id":
+			case "access_key_id":
 				if d.NextArg() {
 					p.Provider.AccKeyID = d.Val()
 				}
 				if d.NextArg() {
 					return d.ArgErr()
 				}
-			case "secret_key":
+			case "access_key_secret":
 				if d.NextArg() {
 					p.Provider.AccKeySecret = d.Val()
 				}
