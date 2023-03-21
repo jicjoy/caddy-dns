@@ -4,7 +4,7 @@ go 1.19
 
 require (
 	github.com/caddyserver/caddy/v2 v2.6.4
-	github.com/jicjoy/huaweidns v1.0.8
+	github.com/jicjoy/huaweidns v1.0.9
 )
 
 require (
